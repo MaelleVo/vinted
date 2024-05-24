@@ -1,4 +1,4 @@
-// DotEnv
+// DotEnv =
 require("dotenv").config();
 
 // REQUIRE EXPRESS & MONGOOSE
