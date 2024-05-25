@@ -47,7 +47,7 @@ app.all("*", (req, res) => {
 });
 // LISTEN SERVER
 app.listen(process.env.PORT, () => {
-  console.log("server started on port : " + process.env.PORT);
+  console.log("🦊 🦊 server started on port : " + process.env.PORT);
 });
 
 //
