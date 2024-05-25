@@ -16,7 +16,7 @@ const encBase64 = require("crypto-js/enc-base64");
 const uid2 = require("uid2");
 
 // CONNECT DATABASE MONGODB
-mongoose.connect(process.env.MONGO_URI);
+mongoose.connect(process.env.MONGODB_URI);
 
 // CLOUDINARY
 const cloudinary = require("cloudinary").v2;
