@@ -41,6 +41,11 @@ const offerRoutes = require("./routes/offer.routes");
 app.use(signupRoutes);
 app.use(offerRoutes);
 
+// Route en Get to show into Browser
+app.get("/", (req, res) => {
+  res.json({ message: "🦊 Hello there! 🦊" });
+});
+
 // ALL ROUTES
 app.all("*", (req, res) => {
   res.status(404).json({ message: "all routes" });
