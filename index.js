@@ -36,10 +36,13 @@ const fileupload = require("express-fileupload");
 const signupRoutes = require("./routes/user.routes");
 // PUBLISH
 const offerRoutes = require("./routes/offer.routes");
+// PAYMENT
+const paymentRoutes = require("./routes/payment.routes");
 
 // USE ROUTES
 app.use(signupRoutes);
 app.use(offerRoutes);
+app.use(paymentRoutes);
 
 // Route en Get to show into Browser
 app.get("/", (req, res) => {
